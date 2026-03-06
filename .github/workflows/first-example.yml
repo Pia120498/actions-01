@@ -3,12 +3,12 @@ name: My first workflow
 on: push
 
 jobs: 
-  first-job: 
-  runs-on: ubuntu-latest
-  steps:
-  - name: Welcome message
-    run: echo "Hello Priya"
-  - name: List files present in directory
-    run: ls -lrt
-  - name: open readme file
-    run: cat readme.md
+  first_job: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: Welcome message
+      run: echo "Hello Priya"
+    - name: List files present in directory
+      run: ls -lrt
+    - name: open readme file
+      run: cat README.md
