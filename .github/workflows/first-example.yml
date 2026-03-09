@@ -9,7 +9,8 @@ jobs:
 
     - name: checkout repo
       uses: actions/checkout@v4
-
+    - name: list files
+      run: ls -lrta
     - name: run script
       run: |
         sudo chmod 777 sample-script.sh
