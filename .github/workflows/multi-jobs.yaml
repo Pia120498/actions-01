@@ -9,7 +9,7 @@ jobs:
       - name: create dragon.txt
         run: cowsay -f dragon "I am dragon... Shirorororororo!!!!!" >> dragon.txt
       - name: upload dragon.txt as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: dragon-file
           path: dragon.txt
@@ -20,7 +20,7 @@ jobs:
     needs: build-job
     steps:
       - name: download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v5
         with:
           name: dragon-file
           path: .
@@ -32,7 +32,7 @@ jobs:
     needs: test-job
     steps:
       - name: download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v5
         with:
           name: dragon-file
           path: .
