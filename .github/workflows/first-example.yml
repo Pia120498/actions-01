@@ -6,8 +6,10 @@ jobs:
   first_job: 
     runs-on: ubuntu-latest
     steps:
+    - name: checkout repo
+      uses: actions/checkout@v4
     - name: Welcome message
-      run: echo "Hello Priya"
+      run: echo "Hello Priyaaaa"
     - name: List files present in directory
       run: ls -lrt
     - name: open readme file
