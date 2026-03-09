@@ -6,10 +6,12 @@ jobs:
   first_job: 
     runs-on: ubuntu-latest
     steps:
+
     - name: checkout repo
       uses: actions/checkout@v4
+
     - name: run script
       run: |
-        chmod 001 sample-script.sh
+        sudo chmod 777 sample-script.sh
         ./sample-script.sh
       
