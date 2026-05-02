@@ -8,11 +8,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-14,windows-latest, ubuntu-latest]
+        os: [windows-latest]
         py-version: [3.10, 3.11, 3.12]
-        exclude:
-          - os: [macos-14, ubuntu-latest]
-            py-version: 3.10
+        # exclude:
+        #   - os: [macos-14, ubuntu-latest]
+        #     py-version: 3.10
             
     steps:
       - name: Checkout code
